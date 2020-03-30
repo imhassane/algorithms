@@ -9,7 +9,7 @@ Vue.use(Router);
 
 export default new Router({
     mode: 'history',
-    base: "http://localhost:8080/",
+    base: "/",
     routes: [
         {
             name: 'home',

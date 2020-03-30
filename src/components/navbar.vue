@@ -16,6 +16,7 @@
         </vk-grid>
         <hr />
         <vk-grid class="uk-flex-around">
+            <div><router-link to="/" class="uk-button uk-button-small">home</router-link></div>
             <div><router-link to="/algos/djikstra" class="uk-button uk-button-small">djikstra</router-link></div>
             <div><router-link to="/algos/" class="uk-button uk-button-small">A*</router-link></div>
             <div><router-link to="/algos/" class="uk-button uk-button-small">bubble sort</router-link></div>
@@ -23,7 +24,6 @@
             <div><router-link to="/algos/" class="uk-button uk-button-small">quick sort</router-link></div>
             <div><router-link to="/algos/" class="uk-button uk-button-small">local finding</router-link></div>
             <div><router-link to="/algos/" class="uk-button uk-button-small">minimum</router-link></div>
-            <div><router-link to="/algos/" class="uk-button uk-button-small">dotro</router-link></div>
             <div><router-link to="/algos/" class="uk-button uk-button-small">others</router-link></div>
         </vk-grid>
         <hr />
