@@ -21,7 +21,7 @@
             <div><router-link to="/algos/" class="uk-button uk-button-small">A*</router-link></div>
             <div><router-link to="/algos/" class="uk-button uk-button-small">bubble sort</router-link></div>
             <div><router-link to="/algos/" class="uk-button uk-button-small">merge sort</router-link></div>
-            <div><router-link to="/algos/" class="uk-button uk-button-small">quick sort</router-link></div>
+            <div><router-link to="/algos/quicksort" class="uk-button uk-button-small">quick sort</router-link></div>
             <div><router-link to="/algos/" class="uk-button uk-button-small">local finding</router-link></div>
             <div><router-link to="/algos/" class="uk-button uk-button-small">minimum</router-link></div>
             <div><router-link to="/algos/" class="uk-button uk-button-small">others</router-link></div>
