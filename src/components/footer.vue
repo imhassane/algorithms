@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'footer',
+    name: 'Footer',
     computed: {
         image: () => "https://raw.githubusercontent.com/imhassane/algorithms/master/src/assets/me.jpg",
     }
