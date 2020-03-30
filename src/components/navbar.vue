@@ -16,15 +16,15 @@
         </vk-grid>
         <hr />
         <vk-grid class="uk-flex-around">
-            <div><a href="#" class="uk-button uk-button-small">djikstra</a></div>
-            <div><a href="#" class="uk-button uk-button-small">A*</a></div>
-            <div><a href="#" class="uk-button uk-button-small">bubble sort</a></div>
-            <div><a href="#" class="uk-button uk-button-small">merge sort</a></div>
-            <div><a href="#" class="uk-button uk-button-small">quick sort</a></div>
-            <div><a href="#" class="uk-button uk-button-small">local finding</a></div>
-            <div><a href="#" class="uk-button uk-button-small">minimum</a></div>
-            <div><a href="#" class="uk-button uk-button-small">dotro</a></div>
-            <div><a href="#" class="uk-button uk-button-small">others</a></div>
+            <div><router-link to="/algos/djikstra" class="uk-button uk-button-small">djikstra</router-link></div>
+            <div><router-link to="/algos/" class="uk-button uk-button-small">A*</router-link></div>
+            <div><router-link to="/algos/" class="uk-button uk-button-small">bubble sort</router-link></div>
+            <div><router-link to="/algos/" class="uk-button uk-button-small">merge sort</router-link></div>
+            <div><router-link to="/algos/" class="uk-button uk-button-small">quick sort</router-link></div>
+            <div><router-link to="/algos/" class="uk-button uk-button-small">local finding</router-link></div>
+            <div><router-link to="/algos/" class="uk-button uk-button-small">minimum</router-link></div>
+            <div><router-link to="/algos/" class="uk-button uk-button-small">dotro</router-link></div>
+            <div><router-link to="/algos/" class="uk-button uk-button-small">others</router-link></div>
         </vk-grid>
         <hr />
     </div>

@@ -31,16 +31,30 @@ export default {
     components: { VueP5 },
     methods: {
         sketch(sk) {
+            let replayButton;
             let values = [];
             let i = 0;
 
             sk.setup = function() {
                 sk.resizeCanvas(600, 400);
+                replayButton = sk.createButton("run again");
+                replayButton.mousePressed(sk.onRunAgain);
+                replayButton.class('uk-button uk-margin');
 
                 for(let j = 0; j < sk.width/8; j++) {
                     values.push(sk.random(sk.height));
                 }
             }
+
+            sk.onRunAgain = function() {
+                    values = [];
+                    for(let j = 0; j < sk.width/8; j++) {
+                        values.push(sk.random(sk.height));
+                    }
+                    i = 0;
+                    sk.loop();
+            }
+
             sk.draw = function() {
                 sk.background("#C7EFCF");
 
@@ -54,11 +68,7 @@ export default {
                     }
                     i++;
                 } else {
-                    values = [];
-                    for(let j = 0; j < sk.width/8; j++) {
-                        values.push(sk.random(sk.height));
-                    }
-                    i = 0;
+                    sk.noLoop();
                 }
 
                 for(let j = 0; j < values.length; j++) {
