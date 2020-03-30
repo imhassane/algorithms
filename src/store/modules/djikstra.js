@@ -56,7 +56,19 @@ const state = {
     nodes: nodes,
 };
 
-const actions = {};
+const actions = {
+    ADD_NODE: function({ state, commit }, values) {
+        const { name, node, mass, mouse } = values;
+        if(name && mass && mouse ) {
+            let newNode = new DNode(name, mouse.x, mouse.y);
+            if(node) {
+                node.addNeighbor(newNode, mass);
+            }
+            let nodes = state.nodes;
+            commit('setNodes', [...nodes, newNode]);
+        }
+    }
+};
 
 const mutations = {
     setNodes: (state, nodes) => state.nodes = nodes,

@@ -19,9 +19,8 @@ export default {
             }
 
             sk.draw = function() {
-                sk.background("#000");
+                sk.background("#5fbd74");
                 sk.displayNodes();
-                sk.noLoop();
             }
 
             sk.displayNodes = function() {
